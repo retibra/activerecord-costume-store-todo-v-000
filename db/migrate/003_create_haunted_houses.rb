@@ -5,11 +5,12 @@ class CreateHauntedHouses < ActiveRecord::Migration[4.2]
     create_table :costume_stores do |t|
       t.string :name
       t.string :location
-      t.string :theme
       t.float :price
-      t.integer :employees
-      t.datetime :opening
-      t.datetime :closing
+      t.string :theme
+      t.boolean :family_friendly
+      t.datetime :opening_date
+      t.datetime :closing_date
+      t.text :description
       end
     end
 
